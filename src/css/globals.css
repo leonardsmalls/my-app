@@ -1,0 +1,75 @@
+body > main nav {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 20vw;
+    height: 100svh;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body > main nav button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #ddd;
+    border-bottom: 1px solid #bbb;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.05s ease-in-out;
+}
+
+body > main nav button:last-of-type {
+    bottom: 0;
+    position: absolute;
+}
+
+body > main nav button:hover {
+    background: #ccc;
+    transition: all 0.25s ease-in-out;
+}
+
+body > main nav button.active {
+    background: #bbb;
+    border-bottom: 1px solid #aaa;
+}
+
+
+
+
+body > main section.content {
+    opacity: 0;
+    position: absolute;
+    left: 20vw;
+    top: 0;
+    width: 70vw;
+    padding: 30px;
+    overflow-x: hidden;
+}
+body > main section.content.fade-in {
+    opacity: 1;
+    transition:all 0.125s ease-in-out;
+}
+body> main section.content.fade-out {
+    opacity: 0;
+    transition:all 0.125s ease-in-out;
+}
+
+.project-card {
+    background: aliceblue;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 50vw;
+    position: relative;
+    left: 2vw;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.33);
+}
